@@ -319,18 +319,38 @@ h1 {
 
 /*navbar size adjust*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 470px){
    
     .fst-img{
         width: 100%;
-        height: 120vh;
+        height: 130vh;
     }
     #carouselExampleIndicators{
         text-align: center;
     }
 
     .main-message{
-        padding: 0 5rem;
+        padding: 0 0;
+        margin: 0 1rem;
+        padding-bottom: 2rem;
+
+    }
+}
+
+@media screen and (max-width: 600px){
+   
+    .fst-img{
+        width: 100%;
+        height: 170vh;
+    }
+    .main-message{
+        padding: 0 0;
+        margin: 0 1rem;
+        margin-top: 0;
+    }
+
+    #grade{
+        margin-bottom: 20%;
     }
 }
 
