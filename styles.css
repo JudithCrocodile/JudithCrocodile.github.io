@@ -319,10 +319,18 @@ h1 {
 
 /*navbar size adjust*/
 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 375px){
    
+    .fst-img{
+        width: 100%;
+        height: 120vh;
+    }
     #carouselExampleIndicators{
-        width: 30rem;
+        text-align: center;
+    }
+
+    .main-message{
+        padding: 0 5rem;
     }
 }
 
