@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional');
+
+/*Global styles*/
+
+body,button, input,select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family:MicrosoftYaHei,'宋體',Tahoma,Helvetica,Arial,"\5b8b\4f53", sans-serif;}
+body,input,button,select,textarea{
+    font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+    font-size:108%;
+    }
+    
+    h1,h2,h3,h4,h5,h6{   font-weight:normal; }
+    h1,h2,h3,h4,h5,h6{  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  }
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;  
+    overflow-x:hidden;
+}
+
+body{
+    background-color: rgb(204, 255, 240);
+}
+
+h3{
+   font-size: 2rem;
+   margin: 2rem 0;
+   text-align: center;
+   font-weight:700;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-weight:700;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.6rem
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*header*/
+header{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+}
+
+.container{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+}
+
+nav.container{
+    overflow-y: hidden;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    flex-direction: column;
+}
+
+.nav-brand{
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-icons i, a i{
+    font-size: 3.5rem;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.close i{
+    color: #eb648c;
+}
+
+.nav-list {
+    width: 25rem;
+    height: 100vh;
+    background-color: #d7d4ed;
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-list.active{
+    right: 0;
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.nav-item{
+    margin: 1.5rem 0;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    color: rgba(0,0,0,.7);
+}
+
+/*web*/
+.fst-img{
+    width: 100%;
+    height: 95vh;
+    margin-top:0;
+    top:0;
+    background-size: cover;
+    background-image: url('./images/olena-sergienko-dIMJWLx1YbE-unsplash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-position: center center;
+    z-index: -1500;
+    position: relative;
+}
+
+.main-message{
+    /*max-width: 50rem;*/
+    transform: translateY(20%);
+    padding: 5rem 10rem;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-bottom: 5rem;
+}
+
+
+
+.main-message img {
+    width: 10rem;
+    object-fit:cover;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid #eb648c;
+}
+
+
+
+
+#grade{
+    width: 100%;
+    height: 95vh;
+    margin: 5rem 0;
+    padding: 4rem 0;
+    /*background-image: url('./images/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg'); 
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-position: center center;
+    z-index: -1500;*/
+    position: relative;
+    margin-top: 15rem;
+    
+}
+
+#grade .text p{
+    text-align: center;
+    
+}
+
+#about-me .container-fluid.row img,
+#about-me .container-fluid.row div{
+    padding: 0;
+}
+
+.color-cube{
+    background: rgb(224, 233, 224);
+    padding: 2rem 0;
+    width: 20%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.row{
+    padding: 0;
+}
+
+#works{
+text-align: center;
+padding: 0 2rem;
+margin: 35rem 10rem 20rem 10rem;
+}
+
+.text{
+    margin-bottom: 8rem; 
+    margin: 1rem;
+}
+
+#works .text{
+    margin-bottom: 8rem;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-right: 0;
+    font-size: 2rem;
+}
+
+.content h2,
+.text h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.text h1, .text h2{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.text p,
+.content p,
+.content text ul li,
+.text li{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+footer{
+    padding-top: 4.5rem;
+    text-align: center; 
+    margin-bottom:0;
+    width:100%;
+    height: 30vh;
+    background: #151418;
+    color: #fafafa;
+    bottom: 0;
+}
+
+content .text{
+    text-align: left;
+}
+
+footer .text{
+    margin-bottom: 0;
+}
+
+
+
+
+
+/*navbar size adjust*/
+@media screen and (min-width: 470px){
+    .main-message{
+        transform:translateY(40%);
+    }
+
+}
+
+@media screen and (min-width: 700px){
+    header{
+        height: 8rem; 
+    }
+
+    .nav-brand{
+        width: 3.5rem;
+    }
+    .nav-list{
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+    }
+
+    .menu-icons{
+        display: none;
+    }
+
+    .nav-item{
+        margin: 0 2.5rem;
+    }
+
+    .nav-link,
+    .current{
+        color: #fafafa;
+        position: relative;
+        font-size: 1.3rem;
+    }
+
+   .nav-link::before,
+   .current::before{
+       content: '';
+       position: absolute;
+       left: 0;
+       bottom: -.5rem;
+       background-color: #eb648c;
+       width: 100%;
+       height: 2px;
+       transform: scale(0);
+       transform-origin: left;
+       transition: transform 650ms;
+   }
+
+   .current::before{
+       transform: scaleX(1);
+   }
+
+   .nav-link:hover::before{
+       transform:scaleX(1);
+   }
+
+   .hero{
+       height: 60vh;
+   }
+
+   .main-message{
+       transform: translateY(75%);
+   }
+
+   
+}
