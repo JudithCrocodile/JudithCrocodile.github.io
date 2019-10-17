@@ -58,9 +58,6 @@ ul{
     list-style: none;
 }
 
-p{
-    font-size: 1.6rem
-}
 
 img{
     width: 100%;
@@ -171,7 +168,7 @@ nav{
 .main-message{
     /*max-width: 50rem;*/
     transform: translateY(20%);
-    padding: 5rem 10rem;
+    padding: 0 10rem;
     text-align: center;
     justify-content: center;
     color: #ffffff;
@@ -181,7 +178,7 @@ nav{
 
 
 
-.main-message img {
+.photo {
     width: 10rem;
     object-fit:cover;
     height: 10rem;
@@ -189,7 +186,11 @@ nav{
     border: 3px solid #eb648c;
 }
 
-
+#grade.container.text.pink,
+.pink{
+    height: 3px;
+    width: 20rem;
+}
 
 
 #grade{
@@ -206,12 +207,18 @@ nav{
     z-index: -1500;*/
     position: relative;
     margin-top: 15rem;
-    
+    margin-bottom: 30rem;
 }
 
 #grade .text p{
     text-align: center;
     
+}
+
+.certificate{
+    transform:rotate(270deg);
+    width: 40rem;
+    text-align: center;
 }
 
 #about-me .container-fluid.row img,
@@ -240,6 +247,7 @@ margin: 35rem 10rem 20rem 10rem;
 .text{
     margin-bottom: 8rem; 
     margin: 1rem;
+    text-align: center;
 }
 
 #works .text{
@@ -295,15 +303,47 @@ footer .text{
 }
 
 
+/*
+h1 {
+    border-bottom: 2px solid #eb648c;
+    padding-bottom: 1rem;
+    width: 20%;
+    text-align: center;
+    margin-block-end: 0;
+}*/
+
+
+
 
 
 
 /*navbar size adjust*/
+
+@media screen and (max-width: 470px){
+   
+    #carouselExampleIndicators{
+        width: 30rem;
+    }
+}
+
 @media screen and (min-width: 470px){
     .main-message{
         transform:translateY(40%);
     }
-
+    .main-message{
+        margin-top: -4rem;
+        
+    }
+    .fst-img{
+        width: 100%;
+        height: 120vh;
+    }
+    #grade img{
+        width: 60%;
+    }
+    /*#carouselExampleIndicators{
+        width: 30rem;
+    }*/
 }
 
 @media screen and (min-width: 700px){
