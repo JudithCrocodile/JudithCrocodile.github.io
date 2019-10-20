@@ -5,12 +5,12 @@
 
 body,button, input,select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family:MicrosoftYaHei,'宋體',Tahoma,Helvetica,Arial,"\5b8b\4f53", sans-serif;}
 body,input,button,select,textarea{
-    font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+    font-family: "Helvetica Neue",'Noto Sans TC',  Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
     font-size:108%;
     }
     
     h1,h2,h3,h4,h5,h6{   font-weight:normal; }
-    h1,h2,h3,h4,h5,h6{  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  }
+    h1,h2,h3,h4,h5,h6{  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 'Noto Sans TC';  }
 *,
 *::before,
 *::after{
@@ -144,6 +144,10 @@ nav{
     margin: 1.5rem 0;
 }
 
+.nav-item a:hover{
+    color: #fafafa;
+}
+
 .nav-link{
     font-size: 1.6rem;
     color: rgba(0,0,0,.7);
@@ -153,8 +157,7 @@ nav{
 .fst-img{
     width: 100%;
     height: 95vh;
-    margin-top:0;
-    top:0;
+    margin-top:-10px;
     background-size: cover;
     background-image: url('./images/olena-sergienko-dIMJWLx1YbE-unsplash.jpg');
     background-attachment: fixed;
@@ -162,11 +165,12 @@ nav{
     background-position:left top;
     background-position: center center;
     z-index: -1500;
-    position: relative;
+    position: absolute;
+    size: cover;
 }
 
 .main-message{
-    /*max-width: 50rem;*/
+    height: 50vh;
     transform: translateY(20%);
     padding: 0 10rem;
     text-align: center;
@@ -176,8 +180,6 @@ nav{
     margin-bottom: 5rem;
 }
 
-
-
 .photo {
     width: 10rem;
     object-fit:cover;
@@ -186,63 +188,188 @@ nav{
     border: 3px solid #eb648c;
 }
 
-#grade.container.text.pink,
-.pink{
-    height: 3px;
-    width: 20rem;
+#btn{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
 }
 
-
-#grade{
-    width: 100%;
-    height: 95vh;
-    margin: 5rem 0;
-    padding: 4rem 0;
-    /*background-image: url('./images/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg'); 
-    background-size: cover;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position:left top;
-    background-position: center center;
-    z-index: -1500;*/
-    position: relative;
-    margin-top: 15rem;
-    margin-bottom: 30rem;
-}
-
-#grade .text p{
-    text-align: center;
+.button{
+    border-radius: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
     
 }
 
-.certificate{
-    transform:rotate(270deg);
-    width: 40rem;
+
+#btn-1{
+    width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    border: 2px solid#eb648c;
+    color: #fafafa;
+    transition: all 100ms ease-in-out;
     text-align: center;
+    padding: 2rem auto;
+    margin-right: 1rem;
 }
+
+#btn-1:hover{
+    background: #eb648c;
+    color: #fafafa;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#btn-2{
+    width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    background: #fafafa;;
+    color: #eb648c;
+    transition: all 100ms ease-in-out;
+    border: 2px solid #fafafa;
+    text-shadow: none;
+}
+
+#btn-2:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/*skills*/
+#skills{
+    margin-top: 100vh;
+}
+
+#skills h3{
+    font-size: 3rem;
+    font-family: 'Noto Sans TC', sans-serif; 
+    font-weight: 700;
+    height: 4rem;
+}
+
+.skills-items{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+ grid-gap: 2.5rem;
+ margin-top: 8rem;
+}
+
+.skill-i {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.skill{
+    height: 45rem;
+    padding: 5rem;
+    text-align: center;
+    color:　rgb(75, 80, 76);
+    font-family: 'Noto Sans TC', sans-serif;
+    background: #eaf3ed;
+    transition: all 650ms ease-in-out;
+}
+
+.skill:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/*about me*/
 
 #about-me .container-fluid.row img,
 #about-me .container-fluid.row div{
     padding: 0;
 }
 
-.color-cube{
-    background: rgb(224, 233, 224);
-    padding: 2rem 0;
-    width: 20%;
-    height: 30vh;
-    border-radius: 10px;
+#about-me .personality-title{
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
 }
+
+
+#about-me{
+    margin-top: 30rem;
+}
+
+#about-me i {
+    margin: 2rem auto;
+}
+
+
 
 .row{
     padding: 0;
 }
 
+
+/* works */
 #works{
 text-align: center;
 padding: 0 2rem;
-margin: 35rem 10rem 20rem 10rem;
+width: 80%;
+margin: auto auto;
+margin-top: 35rem;
 }
+
+
+.works-test h3{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-bottom: 4rem;
+}
+
+.works h3{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.work a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #000000;
+}
+
+.work a:hover{
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.work-intro{
+    margin-top: 2rem;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+    margin: 4rem auto;
+   }
+
+  .work-intro{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  .work img{
+    transition: all 650ms ease-in-out;
+}
+  .work img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
 
 .text{
     margin-bottom: 8rem; 
@@ -277,7 +404,8 @@ margin: 35rem 10rem 20rem 10rem;
 .text p,
 .content p,
 .content text ul li,
-.text li{
+.nav-item,
+#about-me li{
     font-size: 1.6rem;
     font-weight: 400;
     font-family: 'Noto Sans TC', sans-serif;
@@ -287,6 +415,7 @@ footer{
     padding-top: 4.5rem;
     text-align: center; 
     margin-bottom:0;
+    margin-top: 25rem;
     width:100%;
     height: 30vh;
     background: #151418;
@@ -298,22 +427,17 @@ content .text{
     text-align: left;
 }
 
-footer .text{
-    margin-bottom: 0;
+
+.attribution {
+    margin-top: 9vh;
 }
 
-
-/*
-h1 {
-    border-bottom: 2px solid #eb648c;
-    padding-bottom: 1rem;
-    width: 20%;
-    text-align: center;
-    margin-block-end: 0;
-}*/
-
-
-
+.pink{
+    color: #eb648c;
+    width: 10rem;
+    border: 3px solid #eb648c;
+    margin: auto;
+}
 
 
 
@@ -348,30 +472,16 @@ h1 {
         margin: 0 1rem;
         margin-top: 0;
     }
-
-    #grade{
-        margin-bottom: 20%;
-    }
 }
 
 @media screen and (min-width: 470px){
     .main-message{
         transform:translateY(40%);
     }
-    .main-message{
-        margin-top: -4rem;
-        
-    }
     .fst-img{
         width: 100%;
         height: 120vh;
     }
-    #grade img{
-        width: 60%;
-    }
-    /*#carouselExampleIndicators{
-        width: 30rem;
-    }*/
 }
 
 @media screen and (min-width: 700px){

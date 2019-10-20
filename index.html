@@ -5,9 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Li Yi-Chen's Resume | Home</title>
+    <title>Li Yi-Chen's Portfolio | Home</title>
     <!--Ion Icons-->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
@@ -35,10 +36,10 @@
                             <i class="icon ion-md-mail"></i>
                         </a>
                     <li class="nav-item">
-                        <a href="" class="nav-link current">Home</a>
+                        <a href="#" class="nav-link current">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#grade" class="nav-link">學歷證書</a>
+                        <a href="#skills" class="nav-link">前端技能</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about-me" class="nav-link">個人簡歷</a>
@@ -50,33 +51,75 @@
             </nav>
         </div>
     </header>
-  
     <section class="web">
-        <div class="fst-img fst-p"> 
-            <div class="container">
-                <div class="main-message text">
-                    <h3>大學考試入學分發會 組員應徵</h3>
+            <div class='fst-img'></div>
+            <div class="  fst-p">
+                <div class="container main-message text">
+                    
+                    <h3></h3>
                     <img class='photo' style='margin: 5rem 0;' src="./images/me.jpg" alt="頭像">
                     <h1>李宜真</h1>
-                    <img src="./images/pink.jpg" class='pink' alt="">
-                    <p>您好。我的名字是李宜真。我在104網站上看到貴校大學考試入學分發會應徵組員的消息。</p>
-                    <p>目前我還沒有許多網頁作品</p>
-                    <p>因此我做了這個網站整理我的個人履歷以及作品集。希望可以表現我製作網站的技巧。</p>
-                    <p>此網站支援瀏覽器的不同大小，具RWD響應式網頁的特色。任何尺寸的網站應該都可以瀏覽。</p>
+                    <hr class="pink">
+                    <p>Hello,我的名字是李宜真</p>
+                    <p>我的興趣是設計漂亮的網站</p>
+                    <p>目前正在尋找前端網頁工程師的職業</p>
+                    <p>這個網站是我的個人履歷</p>
+                    <p>煩請不吝指教</p>
+                    <div id="btn">
+                            <a id='btn-1' href="#works" class='button'>我的作品</a> 
+                            <a id='btn-2' href="#footer" class='button'>聯絡我</a>
+                        </div>
                 </div>
+                
+                    
             </div>
-        </div>
-       
+            
 
-            <div id="grade">
-                <div class="container">
-                    <div class='text'>
-                        <h3>我的「最高學歷畢業證書影本」</h3>
-                        <h1>國立中興大學歷史學系</h1>
-                        <img src="./images/pink.jpg" class='pink' alt="">
-                        <p>我今年六月時剛從國立中興大學歷史學系畢業，這是我的畢業證書影本</p>
-                        <img class='certificate' src="./images/grade.jpg" alt="我的學歷證書">
+            <div id="skills">
+                <h3>前端技能</h3>
+                <hr class="pink">
+                <div class="container skills-items">
+                    <!-- skill #1 -->
+                    <div class="skill skill-1">
+                        <div class='skill-i'>
+                            <i class="far fa-file-code"></i>
+                        </div>
+                        
+                        <h3>HTML</h3>
+                        <p>我能善用HTML的各式標籤製作網頁基本架購</p>
+                        <p>以及BOOTSTRAP等框架</p>
+                     </div>
+
+                    <!-- skill #2 -->
+                    <div class="skill skill-2">
+                        <div class='skill-i'>
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>CSS</h3>
+                        <p>我能使用CSS為網頁製作美術設計排版</p>
+                        <p>熟悉CSS排版技巧以製作RWD響應式網頁</p>
                     </div>
+
+                    <!-- skill #3 -->
+                    <div class="skill skill-3">
+                        <div class='skill-i'>
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JAVASCRIPT</h3>
+                        <p>熟悉JAVASCRIPT基礎邏輯語法</p>
+                        <p>為網頁加上邏輯互動趣味性</p>
+                    </div>
+                    
+                    <!-- skill #4 -->
+                    <div class="skill skill-4">
+                            <div class='skill-i'>
+                                    <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>後端經驗</h3>
+                            <p>略懂後端運作技巧、能配合後端工程師處理網站</p>
+                            <p>熟悉GIT、NODE.js、NPM</p>
+                            <p>能使用GIT進行版本控制</p>
+                        </div>
                 </div>
             </div>
 
@@ -84,7 +127,7 @@
     <div class="text">
             <h3 class=''>關於我</h3>
             <h1>個人簡歷</h1>
-            <img src="./images/pink.jpg" class='pink' alt="">
+            <hr class="pink">
     </div>
     
             <section class="container-fluid px-0 content">
@@ -97,10 +140,9 @@
                             <div class="row justify-content-center">
                                 <div class="col-10 col-lg-8 blurb text">
                                     <h2>就學經歷</h2>
-                                    <i class="icon ion-ios-book"></i>
+                                    <i class="fas fa-chalkboard"></i>
                                     <ul class='text'>
-                                                <li>2019年於國立中興大學歷史學系畢業</li>
-                                                <li>畢業半年前我開始自學程式設計</li>
+                                        <li>2019年於國立中興大學歷史學系畢業</li>
                                     </ul>
                                 </div>
                             </div>
@@ -115,13 +157,15 @@
                             <div class="row justify-content-center">
                                 <div class="col-10 col-lg-8 blurb text">
                                     <h2>個人特質</h2>
-                                    <i class="icon ion-ios-book"></i>
-                                     
-                                        <ul>
-                                            <li>"善於團隊合作"：曾擔任社團社長，善於與人相處並共同合作。</li>
-                                        　　<li>"自學能力強"：大學時期我曾修習過許多不種類的課程，例如外系英語翻譯。半年前我開始自學網頁設計。我從不怕踏出舒適圈，只怕自己學的不夠。</li>
-                                            <li>"持續突破自我與成長"：自學網頁設計的課程中雖然遭遇許多困難，使用Ｇｏｏｇｌｅ查資料的時間比去年一整年還多。但每次看到網頁中呈現出我心中的畫面時總是覺得在多困難也值得。</li>
-                                            <li>"持續學習英語技能"：去年我靠自主學習得到的多益840的成績。現在持續努力，希望以後能有機會得到滿分。</li>
+                                    <i class="fas fa-chalkboard"></i>
+                                        <ul class='personality'>
+                                            <li class='personality-title'>善於團隊合作：</li>
+                                            <p>曾擔任社團社長，善於與人相處並共同合作。</p>
+                                            <li class='personality-title'>自學能力強：</li>
+                                            <p>大學時期我曾修習過許多不種類的課程，例如外系英語翻譯。半年前我開始自學網頁設計。我從不怕踏出舒適圈，只怕自己學的不夠。</p>
+                                            <li class='personality-title'>持續突破自我與成長：</li>
+                                            <p>自學網頁設計的課程中雖然遭遇許多困難，使用Ｇｏｏｇｌｅ查資料的時間比去年一整年還多。</p>
+                                            <p>但每次看到網頁中呈現出我心中的畫面時總是覺得再多困難也值得。</p>
                                         </ul>
                                 </div>
                             </div>
@@ -143,7 +187,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-10 col-lg-8 blurb">
                                     <h2>未來展望</h2>
-                                    <i class="icon ion-ios-book"></i>
+                                    <i class="fas fa-chalkboard"></i>
                                     <p>希望能持續增進自己的網頁前端設計技巧。</p>
                                     <p>並持續學習，不斷挑戰自我，突破極限。</p>
                                     <p>持續練習英外語</p>
@@ -160,7 +204,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-10 col-lg-8 blurb">
                                     <h2>網頁設計技能</h2>
-                                    <i class="icon ion-ios-book"></i>
+                                    <i class="fas fa-chalkboard"></i>
                                     <ul>
                                         <li>熟悉HTML,CSS,JAVASCRIPT,網頁切版,RWD網頁。</li>
                                         <li>網頁前端頁面設計、排版。</li>
@@ -177,63 +221,91 @@
                     </div>
                 </section>
             </div>
+
+            <div id='works'>
+                    <div class='works-text text'>
+                        <h3>作品集</h3>
+                        <hr class="pink">
+                        <p>以下是我這半年來自學網頁設計所製作的網站。</p>
+                        <p>經過半年的努力，我現在已經對html, css, javascript,網頁切版以及RWD式網頁非常的熟悉了。</p>
+                        <p>(備註:點選縮圖可以進入網站)</p>
+                    </div>
+                       
+                    <div class="works-items">
+                        <!-- work 1 -->
+                            <div class="works">
+                                    <h3>HTML/CSS/切版</h3>
+                                <div class='work'>
+                                    <a href="./works/Purrfect Match/purrfectmatch.html">
+                                        <img src="./images/works/pm.jpg" alt="Purrfect Match/purrfectmatch">
+                                        <p class='work-intro'>Landing Page 製作</p>
+                                    </a>
+                                    <a href="./works/Photo Gillary/Pohto Gillary.html">
+                                        <img src="./images/works/gg.jpg" alt="Pohto Gillary">
+                                        <p class='work-intro'>網頁照片排版</p>
+                                    </a>
+                                </div>
+                                <div class="work">
+                                    <a href="./works/Pattern/Pattern.html">
+                                        <img src="./images/works/pattern.jpg" alt="Pattern">
+                                        <p class='work-intro'>網頁照片排版以及偽部落格</p>
+                                    </a>
+                                    <a href="./works/Museum_of_candy/index.html">
+                                        <img src="./images/works/com.jpg" alt="Museum_of_candy">
+                                        <p class='work-intro'>使用Bootstrap</p>
+                                        <p class='work-intro'>圖片以及文字排版會隨網頁大小變化(RWD式網頁)</p>
+                                    </a>
+                                </div>
+                                <div class="work">
+                                        <a href="https://judithcrocodile.github.io/FrontendMentor-Landing-Page-Challenge-Judith/">
+                                            <img src="./images/works/frointend-mentor.jpg" alt="Pattern">
+                                            <p class='work-intro'>Frontend Mentor Landind Page</p>
+                                        </a>
+                                    </div>
+                                    
+                               
+                                <!-- work 2 -->
+                                <h3>JAVASCRIPT/JQUERY</h3>
+                                <div class='work'>
+                                    <a href="./works/color_game/color_game.html">
+                                        <img src="./images/works/cg.jpg" alt="color_game">
+                                        <p class='work-intro'>這是一個猜測頂端RGB顏色的小遊戲網站</p>
+                                    </a>
+                                    <a href="./works/toDoList/index.html">
+                                        <img src="./images/works/tdl.jpg" alt="ToDoList">
+                                        <p class='work-intro'>代辦清單，使用JQUERY改變元素</p>
+                                        <p class='work-intro'>EX:刪除線、新增刪除元素</p>
+                                    </a>
+                                </div>
+    
+                                <!-- work 3 -->
+                                <h3>後端</h3>
+                                <div class='work'> 
+                                    <a href="https://murmuring-refuge-47228.herokuapp.com/">
+                                        <img src="./images/works/yelpcamp.jpg" alt="Yelp Camp">
+                                        <p class='work-intro'>露營地點評價網站。</p>
+                                        <p class='work-intro'>可以註冊會員並分享露營地點以及留言、評分。</p>
+                                        <p class='work-intro'>使用工具 : NODE.js、EJS、NPM、MONGODB、GIT</p>
+                                    </a>
+                                    </div>
+                                
+                            </div>
+    
+                    </div>
+                       
+    
+                                
+                </div>
         </section>
 
 
-
-
-            <div id='works'>
-                <div class='works-text text'>
-                    <h3>作品集</h3>
-                    <img src="./images/pink.jpg" class='pink' alt="">
-                    <p>以下是我這半年來自學網頁設計所製作的網站。</p>
-                    <p>經過半年的努力，我現在已經對html, css, javascript,網頁切版以及RWD式網頁非常的熟悉了。</p>
-                    <p>(備註:點選縮圖可以進入網站)</p>
-                </div>
-                   
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                  <a href="./works/Purrfect Match/purrfectmatch.html"><img src="./images/pm.jpg" class="d-block w-100" alt="..."></a>
-                              </div>
-                              <div class="carousel-item">
-                                    <a href="./works/color_game/color_game.html"><img src="./images/cg.jpg" class="d-block w-100" alt="..."></a>
-                                
-                              </div>
-                              <div class="carousel-item">
-                                    <a href="./works/Photo Gillary/Pohto Gillary.html"><img src="./images/gg.jpg" class="d-block w-100" alt="..."></a>
-                                
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
-
-
-                            
-            </div>
-            
-        
-        
-    
-
-    <footer>
+    <footer id='footer'>
         <div class="text">
                 <h2>我的聯絡方式</h2>
+                <hr class="pink">
                 <h3>電子信箱:argentum1218@gmail.com</h3>
         </div>
-
+        <div class="attribution">JUDITH'S PORTFOLIO</div>
     </footer>
 
     <script type='text/javascript' src='app.js'></script>
