@@ -86,6 +86,14 @@ header{
     z-index: 1500;
 }
 
+.container-nav{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+}
+
 .container{
     width: 100%;
     max-width: 98rem;
@@ -165,7 +173,7 @@ nav{
 /*web*/
 .fst-img{
     width: 100%;
-    height: 95vh;
+    height: auto;
     margin-top:-10px;
     background-size: cover;
     background-image: url('./images/olena-sergienko-dIMJWLx1YbE-unsplash.jpg');
@@ -178,8 +186,12 @@ nav{
     size: cover;
 }
 
+.fst-p{
+    margin-top: -15rem;
+}
+
 .main-message{
-    height: 50vh;
+    
     transform: translateY(20%);
     padding: 0 10rem;
     text-align: center;
@@ -187,6 +199,7 @@ nav{
     color: #ffffff;
     text-shadow: black 0.1em 0.1em 0.2em;
     margin-bottom: 5rem;
+    position: relative;
 }
 
 .photo {
@@ -198,19 +211,19 @@ nav{
 }
 
 #btn{
-    width: 50rem;
-    margin-top: 2.5rem;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
     grid-gap: 3rem;
-    margin: 4rem auto;
+    justify-content: center;
 }
 
 .button{
     border-radius: 5px;
     font-family: 'Noto Sans TC', sans-serif;
+    justify-content: center;
     
 }
 
@@ -255,7 +268,8 @@ nav{
 
 /*skills*/
 #skills{
-    margin-top: 100vh;
+    margin-top: 50rem;
+    position: relative;
 }
 
 #skills h3{
@@ -326,9 +340,11 @@ nav{
 #works{
 text-align: center;
 padding: 0 2rem;
-width: 80%;
-margin: auto auto;
+width: 100%;
+margin: 0 auto;
 margin-top: 35rem;
+position: relative;
+
 }
 
 
@@ -372,10 +388,11 @@ margin-top: 35rem;
 }
 
 .work{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(44rem, 1fr));
     grid-gap: 3rem;
-    margin: 4rem auto;
+    margin: 0 auto;
    }
 
   .work-intro{
@@ -452,13 +469,12 @@ margin-top: 35rem;
 footer{
     padding-top: 4.5rem;
     text-align: center; 
-    margin-bottom:0;
     margin-top: 25rem;
     width:100%;
-    height: 30vh;
+    height: 26rem;
     background: #151418;
     color: #fafafa;
-    bottom: 0;
+    position: absolute;
 }
 
 content .text{
@@ -467,7 +483,7 @@ content .text{
 
 
 .attribution {
-    margin-top: 9vh;
+    margin-top: 5rem;
 }
 
 .pink{
@@ -475,6 +491,7 @@ content .text{
     width: 10rem;
     border: 3px solid #eb648c;
     margin: auto;
+    margin-bottom: 2rem;
 }
 
 
@@ -491,6 +508,10 @@ content .text{
         text-align: center;
     }
 
+    #skills{
+        margin-top: 10rem;
+    }
+
     .main-message{
         padding: 0 0;
         margin: 0 1rem;
@@ -503,12 +524,12 @@ content .text{
    
     .fst-img{
         width: 100%;
-        height: 170vh;
+        height: 130vh;
     }
     .main-message{
         padding: 0 0;
         margin: 0 1rem;
-        margin-top: 0;
+        margin-top: -5rem;
     }
 }
 
@@ -518,7 +539,7 @@ content .text{
     }
     .fst-img{
         width: 100%;
-        height: 120vh;
+        height: 130vh;
     }
 }
 
