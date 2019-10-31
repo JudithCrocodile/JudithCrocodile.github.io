@@ -122,7 +122,7 @@ nav{
     flex-direction: column;
 }
 
-.menu-icons i, a i{
+.menu-icons i, a i, .ion-md-mail{
     font-size: 3.5rem;
     color: #fafafa;
     cursor: pointer;
@@ -180,7 +180,6 @@ nav{
     background-repeat: no-repeat;
     background-position:left top;
     background-position: center center;
-    z-index: -1500;
     position: relative;
     size: cover;
 }
@@ -291,7 +290,7 @@ nav{
 
 .skill{
     height: 45rem;
-    padding: 5rem;
+    padding: 4rem;
     text-align: center;
     color:　rgb(75, 80, 76);
     font-family: 'Noto Sans TC', sans-serif;
