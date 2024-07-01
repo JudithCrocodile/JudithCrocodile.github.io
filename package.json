@@ -11,6 +11,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "nuxt": "^3.12.2",
     "postcss-html": "^1.7.0"
   },

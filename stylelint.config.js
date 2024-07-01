@@ -8,10 +8,10 @@ module.exports = {
       }
     ],
 
-    'scss/at-import-partial-extension': 'always',
-    'scss/at-import-partial-extension-blacklist': ['']
+    'scss/at-import-partial-extension': 'always'
+    // 'scss/at-import-partial-extension-blacklist': ['']
   },
-  ignoreFiles: ['**/*.js', '**/*.md', '**/*.css', "*.css"],
+  ignoreFiles: ['**/*.js', '**/*.md', '**/*.css'],
   overrides: [
     {
       files: ['**/*.(scss|css|html|vue)'],

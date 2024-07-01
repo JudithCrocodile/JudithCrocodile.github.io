@@ -8,7 +8,7 @@ import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRender
 import { stringify, uneval } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/devalue@5.0.0/node_modules/devalue/index.js';
 import destr from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/destr@2.0.3/node_modules/destr/dist/index.mjs';
 import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/ufo@1.5.3/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/vue@3.4.30_typescript@5.5.2/node_modules/vue/server-renderer/index.mjs';
+import { renderToString } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/vue@3.4.31_typescript@5.5.2/node_modules/vue/server-renderer/index.mjs';
 import { hash } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/ohash@1.1.3/node_modules/ohash/dist/index.mjs';
 import { propsToString, renderSSRHead } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/@unhead+ssr@1.9.14/node_modules/@unhead/ssr/dist/index.mjs';
 import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/ofetch@1.3.4/node_modules/ofetch/dist/node.mjs';
@@ -23,7 +23,7 @@ import { toRouteMatcher, createRouter } from 'file:///Users/judithli/Documents/w
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { consola } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/consola@3.2.3/node_modules/consola/dist/index.mjs';
 import { getContext } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/unctx@2.3.1/node_modules/unctx/dist/index.mjs';
-import { isVNode, version, unref } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/vue@3.4.30_typescript@5.5.2/node_modules/vue/index.mjs';
+import { isVNode, version, unref } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/vue@3.4.31_typescript@5.5.2/node_modules/vue/index.mjs';
 import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/unhead@1.9.14/node_modules/unhead/dist/index.mjs';
 import { defineHeadPlugin } from 'file:///Users/judithli/Documents/workspace/JudithCrocodile/node_modules/.pnpm/@unhead+shared@1.9.14/node_modules/@unhead/shared/dist/index.mjs';
 
@@ -382,6 +382,9 @@ function defineCachedEventHandler(handler, opts = defaultCacheOptions) {
         fetch: globalThis.$fetch
       });
       event.context = incomingEvent.context;
+      event.context.cache = {
+        options: _opts
+      };
       const body = await handler(event) || _resSendBody;
       const headers = event.node.res.getHeaders();
       headers.etag = String(
@@ -731,8 +734,9 @@ async function runTask(name, {
 }
 
 function defineRenderHandler(handler) {
+  const runtimeConfig = useRuntimeConfig();
   return eventHandler(async (event) => {
-    if (event.path.endsWith("/favicon.ico")) {
+    if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
       setResponseHeader(event, "Content-Type", "image/x-icon");
       return send(
         event,

@@ -8,6 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint'
   ],
 
+  plugins: [{ src: '~/plugins/aos', mode: 'client' }],
+
   css: ['~/assets/css/global.scss'],
 
   eslint: {

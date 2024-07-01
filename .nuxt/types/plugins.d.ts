@@ -18,7 +18,8 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@1.3.7_rollup@4.18.0_vite@5.3.2_@types+node@20.14.9_sass@1.77.6_terser@5.31.1_/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.client").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/plugins/chunk-reload.client").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/plugins/dev-server-logs").default> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/plugins/check-if-layout-used").default>
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/plugins/check-if-layout-used").default> &
+  InjectionType<typeof import("../../plugins/aos").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }

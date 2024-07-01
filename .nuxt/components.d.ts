@@ -2,7 +2,10 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
-      'NuxtWelcome': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/welcome")['default']
+      'About': typeof import("../components/About.vue")['default']
+    'Layout': typeof import("../components/Layout.vue")['default']
+    'Work': typeof import("../components/Work.vue")['default']
+    'NuxtWelcome': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/welcome")['default']
     'NuxtLayout': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
     'ClientOnly': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/client-only")['default']
@@ -25,7 +28,10 @@ interface _GlobalComponents {
     'Html': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyNuxtWelcome': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/welcome")['default']
+      'LazyAbout': typeof import("../components/About.vue")['default']
+    'LazyLayout': typeof import("../components/Layout.vue")['default']
+    'LazyWork': typeof import("../components/Work.vue")['default']
+    'LazyNuxtWelcome': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/welcome")['default']
     'LazyNuxtLayout': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'LazyNuxtErrorBoundary': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
     'LazyClientOnly': typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/client-only")['default']
@@ -62,6 +68,9 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const About: typeof import("../components/About.vue")['default']
+export const Layout: typeof import("../components/Layout.vue")['default']
+export const Work: typeof import("../components/Work.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/welcome")['default']
 export const NuxtLayout: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -85,6 +94,9 @@ export const Head: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemet
 export const Html: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+export const LazyAbout: typeof import("../components/About.vue")['default']
+export const LazyLayout: typeof import("../components/Layout.vue")['default']
+export const LazyWork: typeof import("../components/Work.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/welcome")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/.pnpm/nuxt@3.12.2_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_encoding@0.1.1_nnvmmsezivafaonnvzsxokvlem/node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
