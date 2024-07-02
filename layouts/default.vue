@@ -2,10 +2,26 @@
   <div>
     <div class="layout">
       <div class="nav ml-auto w-full">
-        <ul class="flex gap-8 justify-end font-light">
-          <li><button>HOME</button></li>
-          <li><button>WORK</button></li>
-          <li><button>ABOUT</button></li>
+        <ul class="flex gap-12 justify-end font-light">
+          <li>
+            <NuxtLink to="#home" class="hover:text-slate-500 transition-all">
+              HOME
+            </NuxtLink>
+
+            <!-- <button class="hover:text-slate-500 transition-all">HOME</button> -->
+          </li>
+          <li>
+            <NuxtLink to="#work" class="hover:text-slate-500 transition-all">
+              WORK
+            </NuxtLink>
+            <!-- <button class="hover:text-slate-500 transition-all">WORK</button> -->
+          </li>
+          <li>
+            <NuxtLink to="#about" class="hover:text-slate-500 transition-all">
+              ABOUT
+            </NuxtLink>
+            <!-- <button class="hover:text-slate-500 transition-all">ABOUT</button> -->
+          </li>
         </ul>
       </div>
       <div class="nuxt-page-wrapper">
@@ -15,7 +31,7 @@
   </div>
 </template>
 
-<style scope lang="scss">
+<style scoped lang="scss">
 .layout {
   position: relative;
   width: 100vw;
