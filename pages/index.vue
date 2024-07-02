@@ -1,7 +1,10 @@
 <script lang="ts" setup>
+import { watch } from 'vue'
 import { onMounted } from 'vue'
 const { $refreshAos } = useNuxtApp()
 const { $aos } = useNuxtApp()
+import { useRoute } from 'vue-router'
+const route = useRoute()
 
 onMounted(() => {
   // $refreshAos()
@@ -17,18 +20,69 @@ onMounted(() => {
   // window.onresize = function () {
   //   useNuxtApp().$aos().refresh()
   // }
+
+  if (route.hash) {
+    document.querySelector(route.hash).scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
 })
+
+watch(
+  () => route.hash,
+  () => {
+    doScrolling(getElementY(route.hash))
+  }
+)
+
+function getElementY(query) {
+  return (
+    document.querySelector('#page-wrapper').scrollTop +
+    document.querySelector(query).getBoundingClientRect().top -
+    document.querySelector('#page-wrapper').getBoundingClientRect().y // nav height
+  )
+}
+
+function doScrolling(elementY, duration = 1000) {
+  var startingY = document.querySelector('#page-wrapper').scrollTop
+  var diff = elementY - startingY
+  var start
+
+  // Bootstrap our animation - it will get called right before next frame shall be rendered.
+  window.requestAnimationFrame(function step(timestamp) {
+    if (!start) start = timestamp
+    // Elapsed milliseconds since start of scrolling.
+    var time = timestamp - start
+    // Get percent of completion in range [0, 1].
+    var percent = Math.min(time / duration, 1)
+
+    console.log('percent', percent)
+
+    document
+      .querySelector('#page-wrapper')
+      .scrollTo(0, startingY + diff * percent)
+
+    console.log('scrollTo', startingY + diff * percent)
+    console.log('-------------------------------------------')
+
+    // Proceed with animation as long as we wanted it to.
+    if (time < duration) {
+      window.requestAnimationFrame(step)
+    }
+  })
+}
 </script>
 
 <template>
-  <div class="home">
-    <div class="block">
+  <div class="home" id="page-wrapper">
+    <div class="block" id="home">
       <div class="main-content flex" id="test">
         <div class="img-wrapper">
           <img
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-once="true"
+            data-aos-mirror="true"
             src="https://images.unsplash.com/photo-1652368719583-2bd29a79c474?q=80&w=3688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="flower img"
           />
@@ -38,7 +92,7 @@ onMounted(() => {
           data-aos="fade-left"
           data-aos-offset="100"
           data-aos-duration="1000"
-          data-aos-mirror="false"
+          data-aos-mirror="true"
           data-aos-once="true"
           data-aos-anchor="#test"
         >
@@ -72,12 +126,12 @@ onMounted(() => {
   scroll-snap-type: y mandatory;
 }
 
-.block {
-  scroll-margin: 0;
-  scroll-margin-block: 0;
-  scroll-margin-top: 0;
-  scroll-snap-align: start;
-}
+// .block {
+//   scroll-margin: 0;
+//   scroll-margin-block: 0;
+//   scroll-margin-top: 0;
+//   scroll-snap-align: start;
+// }
 
 .main-content {
   width: 100%;
