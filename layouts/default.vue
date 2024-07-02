@@ -1,23 +1,45 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const nuxtPageRef = ref(null)
+
+const clickLink = (hash): void => {
+  nuxtPageRef.value.pageRef.scrollToHash(hash)
+}
+</script>
+
 <template>
   <div>
     <div class="layout">
       <div class="nav ml-auto w-full">
         <ul class="flex gap-12 justify-end font-light">
           <li>
-            <NuxtLink to="#home" class="hover:text-slate-500 transition-all">
+            <NuxtLink
+              to="#home"
+              class="hover:text-slate-500 transition-all"
+              @click="clickLink('#home')"
+            >
               HOME
             </NuxtLink>
 
             <!-- <button class="hover:text-slate-500 transition-all">HOME</button> -->
           </li>
           <li>
-            <NuxtLink to="#work" class="hover:text-slate-500 transition-all">
+            <NuxtLink
+              to="#work"
+              class="hover:text-slate-500 transition-all"
+              @click="clickLink('#work')"
+            >
               WORK
             </NuxtLink>
             <!-- <button class="hover:text-slate-500 transition-all">WORK</button> -->
           </li>
           <li>
-            <NuxtLink to="#about" class="hover:text-slate-500 transition-all">
+            <NuxtLink
+              to="#about"
+              class="hover:text-slate-500 transition-all"
+              @click="clickLink('#about')"
+            >
               ABOUT
             </NuxtLink>
             <!-- <button class="hover:text-slate-500 transition-all">ABOUT</button> -->
@@ -25,7 +47,7 @@
         </ul>
       </div>
       <div class="nuxt-page-wrapper">
-        <NuxtPage />
+        <NuxtPage ref="nuxtPageRef" />
       </div>
     </div>
   </div>

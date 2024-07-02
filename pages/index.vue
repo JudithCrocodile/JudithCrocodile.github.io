@@ -1,10 +1,11 @@
 <script lang="ts" setup>
-import { watch } from 'vue'
-import { onMounted } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 const { $refreshAos } = useNuxtApp()
 const { $aos } = useNuxtApp()
 import { useRoute } from 'vue-router'
 const route = useRoute()
+
+const isScrolling = ref(false)
 
 onMounted(() => {
   // $refreshAos()
@@ -28,10 +29,14 @@ onMounted(() => {
   }
 })
 
+const scrollToHash = (hash: string): void => {
+  doScrolling(getElementY(hash))
+}
+
 watch(
   () => route.hash,
   () => {
-    doScrolling(getElementY(route.hash))
+    scrollToHash(route.hash)
   }
 )
 
@@ -50,6 +55,8 @@ function doScrolling(elementY, duration = 1000) {
 
   // Bootstrap our animation - it will get called right before next frame shall be rendered.
   window.requestAnimationFrame(function step(timestamp) {
+    isScrolling.value = true
+
     if (!start) start = timestamp
     // Elapsed milliseconds since start of scrolling.
     var time = timestamp - start
@@ -68,14 +75,20 @@ function doScrolling(elementY, duration = 1000) {
     // Proceed with animation as long as we wanted it to.
     if (time < duration) {
       window.requestAnimationFrame(step)
+    } else {
+      isScrolling.value = false
     }
   })
 }
+
+defineExpose({
+  scrollToHash
+})
 </script>
 
 <template>
   <div class="home" id="page-wrapper">
-    <div class="block" id="home">
+    <div class="block" :class="{ 'scroll-margin': !isScrolling }" id="home">
       <div class="main-content flex" id="test">
         <div class="img-wrapper">
           <img
@@ -104,10 +117,10 @@ function doScrolling(elementY, duration = 1000) {
         </div>
       </div>
     </div>
-    <div class="block">
+    <div class="block" :class="{ 'scroll-margin': !isScrolling }">
       <Work />
     </div>
-    <div class="block">
+    <div class="block" :class="{ 'scroll-margin': !isScrolling }">
       <About />
     </div>
   </div>
@@ -126,12 +139,14 @@ function doScrolling(elementY, duration = 1000) {
   scroll-snap-type: y mandatory;
 }
 
-// .block {
-//   scroll-margin: 0;
-//   scroll-margin-block: 0;
-//   scroll-margin-top: 0;
-//   scroll-snap-align: start;
-// }
+.block {
+  &.scroll-margin {
+    scroll-margin: 0;
+    scroll-margin-block: 0;
+    scroll-margin-top: 0;
+    scroll-snap-align: start;
+  }
+}
 
 .main-content {
   width: 100%;
