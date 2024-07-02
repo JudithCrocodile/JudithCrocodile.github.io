@@ -13,7 +13,7 @@ const props = defineProps(['title'])
     </h2>
     <div
       data-aos-anchor=".home"
-      class="content md:overflow-y-hidden overflow-y-scroll md:px-4 px-0 lg:px-12 lg:max-w-6xl max-w-full mx-auto"
+      class="content md:overflow-y-hidden overflow-y-scroll md:px-4 px-0 lg:px-12 lg:max-w-6xl max-w-full mx-auto h-full w-full"
       data-aos="fade-up"
     >
       <slot />

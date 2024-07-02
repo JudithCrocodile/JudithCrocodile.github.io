@@ -113,7 +113,9 @@ defineExpose({
             <span>Hi,&nbsp;</span>
             <span class="text-nowrap">I am Jane</span>
           </h1>
-          <p class="font-light text-right">FRONTEND DEVELOPER</p>
+          <p class="font-light text-right tracking-widest">
+            FRONTEND DEVELOPER
+          </p>
         </div>
       </div>
     </div>
@@ -126,7 +128,7 @@ defineExpose({
   </div>
 </template>
 
-<style scope lang="scss">
+<style scoped lang="scss">
 .block,
 .home {
   position: relative;
