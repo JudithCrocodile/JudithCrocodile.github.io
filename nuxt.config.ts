@@ -36,5 +36,13 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+
+  app: {
+    head: {
+      title: 'Jane',
+      meta: [{ name: 'description', content: 'Hi, I am Jane' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    }
   }
 })
