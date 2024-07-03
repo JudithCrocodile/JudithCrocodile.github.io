@@ -2,16 +2,7 @@
   <div id="about" class="h-full">
     <Layout title="ABOUT">
       <div class="main-content flex h-full" id="test">
-        <div class="img-wrapper">
-          <!-- <img
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-once="true"
-            data-aos-mirror="true"
-            src="~/assets/images/me.jpg"
-            alt="flower img"
-          /> -->
-        </div>
+        <div class="img-wrapper"></div>
         <div
           class="context md:pt-20 md:ml-20 md:pl-18 px-5 pb-5 pt-2 w-[80%] md:w-full mx-auto mb-16 md:mb-0"
         >

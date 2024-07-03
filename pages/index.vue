@@ -104,10 +104,10 @@ defineExpose({
           class="context"
           data-aos="fade-left"
           data-aos-offset="100"
-          data-aos-duration="1000"
           data-aos-mirror="true"
           data-aos-once="true"
           data-aos-anchor="#test"
+          data-aos-duration="1000"
         >
           <h1 class="flex flex-wrap">
             <span>Hi,&nbsp;</span>
