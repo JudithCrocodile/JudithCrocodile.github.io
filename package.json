@@ -1,6 +1,9 @@
 {
   "name": "nuxt-app",
   "private": false,
+  "engines": {
+    "node": "22.3.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -p 3000",
