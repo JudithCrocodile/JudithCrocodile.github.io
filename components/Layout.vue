@@ -26,4 +26,17 @@ const props = defineProps(['title'])
   width: 100%;
   height: 100%;
 }
+
+.content {
+  /* FireFox */
+  scrollbar-width: none;
+
+  /* IE10+ */
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  /* Chrome, Safari, Edge */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 </style>
