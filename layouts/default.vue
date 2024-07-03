@@ -61,7 +61,7 @@ const clickLink = (hash): void => {
 
   .nuxt-page-wrapper {
     position: absolute;
-    width: 90vw;
+    width: 95vw;
     height: 85vh;
     left: 50%;
     top: 50%;
@@ -72,7 +72,7 @@ const clickLink = (hash): void => {
 
   .nav {
     height: calc(15vh / 2);
-    width: 90vw;
+    width: 95vw;
     margin: 0 auto;
 
     ul {

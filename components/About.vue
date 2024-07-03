@@ -12,12 +12,14 @@
             alt="flower img"
           /> -->
         </div>
-        <div class="context md:pt-20 md:ml-20 md:pl-18 px-5 pb-5 pt-16">
+        <div
+          class="context md:pt-20 md:ml-20 md:pl-18 px-5 pb-5 pt-2 w-[80%] md:w-full mx-auto mb-16 md:mb-0"
+        >
           <div class="mb-12">
             <p class="font-normal text-lg">4 years of frontend developer</p>
           </div>
 
-          <div>
+          <div class="">
             <h3 class="text-xl tracking-widest mb-8">Skills</h3>
             <ul class="grid grid-cols-3 grid-rows-fr gap-6">
               <li class="font-normal">HTML5</li>
@@ -35,6 +37,14 @@
               <li class="font-normal">Web accessibility</li>
             </ul>
           </div>
+        </div>
+        <div class="footer">
+          <a
+            href="https://github.com/JudithCrocodile?tab=repositories"
+            target="_blank"
+          >
+            <img src="~/assets/images/github-mark.svg" alt="github-mark" />
+          </a>
         </div>
       </div>
     </Layout>
@@ -63,10 +73,33 @@
   }
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  a {
+    opacity: 0.5;
+    transition: all 500ms;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
 @media only screen and (width < 780px) {
   .main-content {
     overflow: hidden scroll;
     flex-direction: column-reverse;
+    padding-bottom: 4rem;
 
     /* FireFox */
     scrollbar-width: none;
@@ -82,6 +115,8 @@
 
   .img-wrapper {
     padding-top: 150%;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 </style>
