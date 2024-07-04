@@ -2,9 +2,9 @@
   <div id="about" class="h-full">
     <Layout title="ABOUT">
       <div class="main-content flex h-full" id="test">
-        <div class="img-wrapper"></div>
+        <div class="img-wrapper order-2"></div>
         <div
-          class="context md:pt-20 md:ml-20 md:pl-18 px-5 pb-5 pt-2 w-[80%] md:w-full mx-auto mb-16 md:mb-0"
+          class="context md:pt-20 md:ml-20 md:pl-18 px-5 pb-5 pt-2 w-[80%] md:w-full mx-auto mb-16 md:mb-0 order-1"
         >
           <div class="mb-12">
             <p class="font-normal text-lg">4 years of frontend developer</p>
@@ -12,7 +12,9 @@
 
           <div class="">
             <h3 class="text-xl tracking-widest mb-8">Skills</h3>
-            <ul class="grid grid-cols-3 grid-rows-fr gap-6">
+            <ul
+              class="grid md:grid-cols-3 grid-rows-fr gap-6 grid-cols-auto sm:grid-cols-2"
+            >
               <li class="font-normal">HTML5</li>
               <li class="font-normal">JAVASCRIPT</li>
               <li class="font-normal">CSS3</li>
@@ -70,6 +72,7 @@
   display: flex;
   justify-content: flex-end;
   right: 0;
+  padding: 1rem;
 
   img {
     width: 2rem;
@@ -89,7 +92,7 @@
 @media only screen and (width < 780px) {
   .main-content {
     overflow: hidden scroll;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-bottom: 4rem;
 
     /* FireFox */

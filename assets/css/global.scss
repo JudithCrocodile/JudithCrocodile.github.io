@@ -64,3 +64,15 @@ td {
   font-size: 100%;
   font-family: inherit;
 }
+
+.animation {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.4s;
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
+}

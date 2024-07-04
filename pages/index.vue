@@ -109,7 +109,7 @@ defineExpose({
 <template>
   <div class="home" id="page-wrapper">
     <div class="block" :class="{ 'scroll-margin': !isScrolling }" id="home">
-      <div class="main-content flex" id="test">
+      <div class="main-content flex overflow-x-hidden" id="test">
         <div class="img-wrapper">
           <img
             data-aos="fade-right"
