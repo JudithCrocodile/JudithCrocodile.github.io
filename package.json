@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "deploy": "gh-pages -d dist",
-    "start": "node index.js"
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
