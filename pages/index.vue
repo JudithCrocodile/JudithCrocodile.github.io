@@ -23,9 +23,12 @@ onMounted(() => {
   // }
 
   if (route.hash) {
-    document.querySelector(route.hash).scrollIntoView({
-      behavior: 'smooth'
-    })
+    const element = document.querySelector<HTMLElement>(route.hash)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
   }
 })
 
@@ -40,18 +43,35 @@ watch(
   }
 )
 
-function getElementY(query) {
-  return (
-    document.querySelector('#page-wrapper').scrollTop +
-    document.querySelector(query).getBoundingClientRect().top -
-    document.querySelector('#page-wrapper').getBoundingClientRect().y // nav height
-  )
+function getElementY(query: string): number {
+  if (document.querySelector('#page-wrapper') === null) {
+    return 0
+  }
+
+  const pageWrapper = document.querySelector<HTMLElement>('#page-wrapper')
+  const target = document.querySelector<HTMLElement>(query)
+
+  if (pageWrapper && target) {
+    return (
+      pageWrapper.scrollTop +
+      target.getBoundingClientRect().top -
+      pageWrapper.getBoundingClientRect().y // nav height
+    )
+  }
+
+  return 0
 }
 
-function doScrolling(elementY, duration = 1000) {
-  var startingY = document.querySelector('#page-wrapper').scrollTop
+function doScrolling(elementY: number, duration = 1000) {
+  const pageWrapper = document.querySelector<HTMLElement>('#page-wrapper')
+  let startingY: number = 0
+
+  if (pageWrapper) {
+    startingY = pageWrapper.scrollTop || 0
+  }
+
   var diff = elementY - startingY
-  var start
+  var start: number
 
   // Bootstrap our animation - it will get called right before next frame shall be rendered.
   window.requestAnimationFrame(function step(timestamp) {
@@ -65,9 +85,9 @@ function doScrolling(elementY, duration = 1000) {
 
     console.log('percent', percent)
 
-    document
-      .querySelector('#page-wrapper')
-      .scrollTo(0, startingY + diff * percent)
+    if (pageWrapper) {
+      pageWrapper.scrollTo(0, startingY + diff * percent)
+    }
 
     console.log('scrollTo', startingY + diff * percent)
     console.log('-------------------------------------------')

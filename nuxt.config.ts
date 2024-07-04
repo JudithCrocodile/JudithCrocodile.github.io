@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   devtools: { enabled: true },
 
   modules: [
@@ -44,5 +45,13 @@ export default defineNuxtConfig({
       meta: [{ name: 'description', content: 'Hi, I am Jane' }],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
     }
+    // baseURL: '/nuxt-github-pages/', // baseURL: '/<repository>/'
+    // buildAssetsDir: 'assets' // don't use "_" at the begining of the folder name to avoids nojkill conflict
   }
+
+  // nitro: {
+  //   prerender: {
+  //     failOnError: false
+  //   }
+  // }
 })

@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const nuxtPageRef = ref(null)
+const nuxtPageRef: any = ref(null)
 
-const clickLink = (hash): void => {
-  nuxtPageRef.value.pageRef.scrollToHash(hash)
+const clickLink = (hash: string): void => {
+  if (nuxtPageRef) {
+    nuxtPageRef.value.pageRef?.scrollToHash(hash)
+  }
 }
 </script>
 
