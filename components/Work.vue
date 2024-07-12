@@ -33,7 +33,7 @@
             </a>
           </li> -->
           <li class="work__item order-2">
-            <a href="https://gr6w44-3001.csb.app/">
+            <a href="https://calculator-app-woad-eta.vercel.app">
               <div class="works-img">
                 <img
                   src="~/assets/images/works/img-calculator.png"
