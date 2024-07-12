@@ -28,6 +28,7 @@
               <li class="font-normal">Git collaboration</li>
               <li class="font-normal">Responsive web design</li>
               <li class="font-normal">Web accessibility</li>
+              <li class="font-normal">Cordova</li>
             </ul>
           </div>
         </div>
