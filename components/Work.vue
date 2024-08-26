@@ -5,6 +5,19 @@
         <ul
           class="work__list grid gap-4 md:grid-cols-2 grid-rows-fr grid-cols-1"
         >
+          <li class="work__item order-1">
+            <a
+              href="https://unsplash-clone-nextjs-jo4b23mkd-judithcrocodiles-projects.vercel.app"
+            >
+              <div class="works-img">
+                <img
+                  src="~/assets/images/works/unsplash_clone.png"
+                  alt="color_game"
+                />
+              </div>
+              <p class="work-intro">Unsplash clone project</p>
+            </a>
+          </li>
           <li class="work__item order-3">
             <a href="/works/color_game/color_game.html">
               <div class="works-img">

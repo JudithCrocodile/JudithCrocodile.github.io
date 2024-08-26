@@ -18,8 +18,10 @@
               <li class="font-normal">HTML5</li>
               <li class="font-normal">JAVASCRIPT</li>
               <li class="font-normal">CSS3</li>
-              <li class="font-normal">VUE</li>
-              <li class="font-normal">NUXT</li>
+              <li class="font-normal">VUE.JS</li>
+              <li class="font-normal">NUXT.JS</li>
+              <li class="font-normal">REACT.JS</li>
+              <li class="font-normal">NUXT.JS</li>
               <li class="font-normal">jQuery</li>
               <li class="font-normal">tailwind css</li>
               <li class="font-normal">bootstrap</li>
