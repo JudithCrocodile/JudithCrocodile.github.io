@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-full" id="work">
     <Layout title="WORK">
-      <div class="work">
+      <div class="work h-full overflow-y-scroll">
         <ul
           class="work__list grid gap-4 md:grid-cols-2 grid-rows-fr grid-cols-1"
         >
@@ -16,6 +16,12 @@
                 />
               </div>
               <p class="work-intro">Unsplash clone project</p>
+              <div>
+                <Tag>React.js</Tag>
+                <Tag>Next.js</Tag>
+                <Tag>Node.js</Tag>
+                <Tag>Tailwind css</Tag>
+              </div>
             </a>
           </li>
           <li class="work__item order-3">
@@ -24,6 +30,10 @@
                 <img src="~/assets/images/works/cg.jpg" alt="color_game" />
               </div>
               <p class="work-intro">COLOR GAME</p>
+              <div>
+                <Tag>JAVASCRIPT</Tag>
+                <Tag>HTML</Tag>
+              </div>
             </a>
           </li>
           <li class="work__item order-4">
@@ -32,6 +42,9 @@
                 <img src="~/assets/images/works/tdl.jpg" alt="ToDoList" />
               </div>
               <p class="work-intro">TODO LIST</p>
+              <div>
+                <Tag>JQUERY</Tag>
+              </div>
             </a>
           </li>
           <!-- <li class="work__item order-1">
@@ -55,6 +68,11 @@
               </div>
               <p class="work-intro">Calculator App</p>
               <!-- <p class="work-intro">使用工具 : Nuxt.js 3</p> -->
+              <div>
+                <Tag>Vue.js</Tag>
+                <Tag>Nuxt.js</Tag>
+                <Tag>Tailwind css</Tag>
+              </div>
             </a>
           </li>
         </ul>
