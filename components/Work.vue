@@ -90,7 +90,7 @@
 <style scoped lang="scss">
 .work {
   &__list {
-    grid-auto-rows: 50%;
+    grid-auto-rows: auto;
   }
 
   &__item {
