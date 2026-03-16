@@ -1,29 +1,34 @@
 <script lang="ts" setup>
-import { onMounted } from 'vue'
+import { onBeforeUnmount, onMounted } from 'vue'
 
-const props = defineProps(['title'])
+defineProps<{ title: string }>()
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('scroll-animation')
-      } else {
-        entry.target.classList.remove('scroll-animation')
-      }
-    })
-  },
-  { threshold: 0.5 }
-)
-//
+let observer: IntersectionObserver | null = null
 
 onMounted(() => {
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scroll-animation')
+        } else {
+          entry.target.classList.remove('scroll-animation')
+        }
+      })
+    },
+    { threshold: 0.5 }
+  )
+
   const animationElements = document.querySelectorAll('.animation')
   for (let i = 0; i < animationElements.length; i++) {
-    const elements = animationElements[i]
+    const element = animationElements[i]
 
-    observer.observe(elements)
+    observer.observe(element)
   }
+})
+
+onBeforeUnmount(() => {
+  observer?.disconnect()
 })
 </script>
 

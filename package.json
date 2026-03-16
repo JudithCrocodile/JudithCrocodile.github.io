@@ -12,8 +12,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "deploy": "gh-pages -d dist",
-    "start": "node .output/server/index.mjs"
+    "deploy": "gh-pages -d .output/public"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",

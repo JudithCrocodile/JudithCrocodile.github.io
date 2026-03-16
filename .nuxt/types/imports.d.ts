@@ -34,7 +34,7 @@ declare global {
   const h: typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['h']
   const hasInjectionContext: typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['hasInjectionContext']
   const inject: typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['inject']
-  const injectHead: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['injectHead']
+  const injectHead: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['injectHead']
   const isNuxtError: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/error')['isNuxtError']
   const isPrerendered: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/payload')['isPrerendered']
   const isProxy: typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['isProxy']
@@ -107,8 +107,8 @@ declare global {
   const useElementScriptTrigger: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useElementScriptTrigger']
   const useError: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/error')['useError']
   const useFetch: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/fetch')['useFetch']
-  const useHead: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHead']
-  const useHeadSafe: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHeadSafe']
+  const useHead: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHead']
+  const useHeadSafe: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHeadSafe']
   const useHydration: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/hydrate')['useHydration']
   const useId: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/id')['useId']
   const useLazyAsyncData: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/asyncData')['useLazyAsyncData']
@@ -118,6 +118,7 @@ declare global {
   const useModel: typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useModel']
   const useNuxtApp: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']
   const useNuxtData: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']
+  const useNuxtDevTools: typeof import('../../node_modules/.pnpm/@nuxt+devtools@1.3.9_rollup@4.18.0_vite@5.3.3_@types+node@20.14.9_sass@1.77.6_terser@5.31.1_/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']
   const usePreviewMode: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']
   const useRequestEvent: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']
   const useRequestFetch: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']
@@ -148,10 +149,10 @@ declare global {
   const useScriptVimeoPlayer: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptVimeoPlayer']
   const useScriptXPixel: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptXPixel']
   const useScriptYouTubePlayer: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptYouTubePlayer']
-  const useSeoMeta: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useSeoMeta']
-  const useServerHead: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHead']
-  const useServerHeadSafe: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHeadSafe']
-  const useServerSeoMeta: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerSeoMeta']
+  const useSeoMeta: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useSeoMeta']
+  const useServerHead: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHead']
+  const useServerHeadSafe: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHeadSafe']
+  const useServerSeoMeta: typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerSeoMeta']
   const useSlots: typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useSlots']
   const useState: typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/state')['useState']
   const useTransitionState: typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useTransitionState']
@@ -209,7 +210,7 @@ declare module 'vue' {
     readonly h: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['h']>
     readonly hasInjectionContext: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['hasInjectionContext']>
     readonly inject: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['inject']>
-    readonly injectHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['injectHead']>
+    readonly injectHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['injectHead']>
     readonly isNuxtError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/error')['isNuxtError']>
     readonly isPrerendered: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/payload')['isPrerendered']>
     readonly isProxy: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['isProxy']>
@@ -282,8 +283,8 @@ declare module 'vue' {
     readonly useElementScriptTrigger: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useElementScriptTrigger']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/error')['useError']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/fetch')['useFetch']>
-    readonly useHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHead']>
-    readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHeadSafe']>
+    readonly useHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHead']>
+    readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHeadSafe']>
     readonly useHydration: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/hydrate')['useHydration']>
     readonly useId: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/id')['useId']>
     readonly useLazyAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/asyncData')['useLazyAsyncData']>
@@ -293,6 +294,7 @@ declare module 'vue' {
     readonly useModel: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
+    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+devtools@1.3.9_rollup@4.18.0_vite@5.3.3_@types+node@20.14.9_sass@1.77.6_terser@5.31.1_/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePreviewMode: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']>
@@ -323,10 +325,10 @@ declare module 'vue' {
     readonly useScriptVimeoPlayer: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptVimeoPlayer']>
     readonly useScriptXPixel: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptXPixel']>
     readonly useScriptYouTubePlayer: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptYouTubePlayer']>
-    readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useSeoMeta']>
-    readonly useServerHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHead']>
-    readonly useServerHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHeadSafe']>
-    readonly useServerSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerSeoMeta']>
+    readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useSeoMeta']>
+    readonly useServerHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHead']>
+    readonly useServerHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHeadSafe']>
+    readonly useServerSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerSeoMeta']>
     readonly useSlots: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useSlots']>
     readonly useState: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/state')['useState']>
     readonly useTransitionState: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useTransitionState']>
@@ -377,7 +379,7 @@ declare module '@vue/runtime-core' {
     readonly h: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['h']>
     readonly hasInjectionContext: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['hasInjectionContext']>
     readonly inject: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['inject']>
-    readonly injectHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['injectHead']>
+    readonly injectHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['injectHead']>
     readonly isNuxtError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/error')['isNuxtError']>
     readonly isPrerendered: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/payload')['isPrerendered']>
     readonly isProxy: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['isProxy']>
@@ -450,8 +452,8 @@ declare module '@vue/runtime-core' {
     readonly useElementScriptTrigger: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useElementScriptTrigger']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/error')['useError']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/fetch')['useFetch']>
-    readonly useHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHead']>
-    readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHeadSafe']>
+    readonly useHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHead']>
+    readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useHeadSafe']>
     readonly useHydration: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/hydrate')['useHydration']>
     readonly useId: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/id')['useId']>
     readonly useLazyAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/asyncData')['useLazyAsyncData']>
@@ -461,6 +463,7 @@ declare module '@vue/runtime-core' {
     readonly useModel: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
+    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+devtools@1.3.9_rollup@4.18.0_vite@5.3.3_@types+node@20.14.9_sass@1.77.6_terser@5.31.1_/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePreviewMode: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']>
@@ -491,10 +494,10 @@ declare module '@vue/runtime-core' {
     readonly useScriptVimeoPlayer: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptVimeoPlayer']>
     readonly useScriptXPixel: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptXPixel']>
     readonly useScriptYouTubePlayer: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptYouTubePlayer']>
-    readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useSeoMeta']>
-    readonly useServerHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHead']>
-    readonly useServerHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHeadSafe']>
-    readonly useServerSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.14_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerSeoMeta']>
+    readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useSeoMeta']>
+    readonly useServerHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHead']>
+    readonly useServerHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerHeadSafe']>
+    readonly useServerSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.9.15_vue@3.4.31_typescript@5.5.3_/node_modules/@unhead/vue')['useServerSeoMeta']>
     readonly useSlots: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useSlots']>
     readonly useState: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/composables/state')['useState']>
     readonly useTransitionState: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.31_typescript@5.5.3/node_modules/vue')['useTransitionState']>

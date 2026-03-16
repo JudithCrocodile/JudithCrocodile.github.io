@@ -4,6 +4,7 @@ type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refre
 interface _GlobalComponents {
       'About': typeof import("../components/About.vue")['default']
     'Layout': typeof import("../components/Layout.vue")['default']
+    'Tag': typeof import("../components/Tag.vue")['default']
     'Work': typeof import("../components/Work.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/welcome")['default']
     'NuxtLayout': typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -30,6 +31,7 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyAbout': typeof import("../components/About.vue")['default']
     'LazyLayout': typeof import("../components/Layout.vue")['default']
+    'LazyTag': typeof import("../components/Tag.vue")['default']
     'LazyWork': typeof import("../components/Work.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/welcome")['default']
     'LazyNuxtLayout': typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -70,6 +72,7 @@ declare module 'vue' {
 
 export const About: typeof import("../components/About.vue")['default']
 export const Layout: typeof import("../components/Layout.vue")['default']
+export const Tag: typeof import("../components/Tag.vue")['default']
 export const Work: typeof import("../components/Work.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/welcome")['default']
 export const NuxtLayout: typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -96,6 +99,7 @@ export const NuxtIsland: typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opent
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyAbout: typeof import("../components/About.vue")['default']
 export const LazyLayout: typeof import("../components/Layout.vue")['default']
+export const LazyTag: typeof import("../components/Tag.vue")['default']
 export const LazyWork: typeof import("../components/Work.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/welcome")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.9_eslint@8.57.0__4ecnx3d3omcuta74ssg47dugd4/node_modules/nuxt/dist/app/components/nuxt-layout")['default']

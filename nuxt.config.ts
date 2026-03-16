@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   devtools: { enabled: true },
 
   modules: [
@@ -10,7 +10,6 @@ export default defineNuxtConfig({
   ],
 
   plugins: [{ src: '~/plugins/aos', mode: 'client' }],
-
   css: ['~/assets/css/global.scss'],
 
   eslint: {
@@ -25,6 +24,7 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
+
   typescript: {
     typeCheck: true
   },
@@ -39,6 +39,11 @@ export default defineNuxtConfig({
     }
   },
 
+  // nitro: {
+  //   prerender: {
+  //     failOnError: false
+  //   }
+  // }
   app: {
     head: {
       title: 'Jane',
@@ -47,11 +52,7 @@ export default defineNuxtConfig({
     }
     // baseURL: '/nuxt-github-pages/', // baseURL: '/<repository>/'
     // buildAssetsDir: 'assets' // don't use "_" at the begining of the folder name to avoids nojkill conflict
-  }
+  },
 
-  // nitro: {
-  //   prerender: {
-  //     failOnError: false
-  //   }
-  // }
+  compatibilityDate: '2026-03-16'
 })

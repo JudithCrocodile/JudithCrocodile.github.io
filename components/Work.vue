@@ -7,7 +7,8 @@
         >
           <li class="work__item order-1">
             <a
-              href="https://unsplash-clone-nextjs-jo4b23mkd-judithcrocodiles-projects.vercel.app"
+              href="https://unsplash-clone-nextjs.vercel.app/"
+              target="_blank"
             >
               <div class="works-img">
                 <img
@@ -25,7 +26,7 @@
             </a>
           </li>
           <li class="work__item order-3">
-            <a href="/works/color_game/color_game.html">
+            <a href="/works/color_game/color_game.html" target="_blank">
               <div class="works-img">
                 <img src="~/assets/images/works/cg.jpg" alt="color_game" />
               </div>
@@ -37,7 +38,7 @@
             </a>
           </li>
           <li class="work__item order-4">
-            <a href="/works/toDoList/index.html">
+            <a href="/works/toDoList/index.html" target="_blank">
               <div class="works-img">
                 <img src="~/assets/images/works/tdl.jpg" alt="ToDoList" />
               </div>
@@ -59,7 +60,7 @@
             </a>
           </li> -->
           <li class="work__item order-2">
-            <a href="https://calculator-app-woad-eta.vercel.app">
+            <a href="https://calculator-app-woad-eta.vercel.app" target="_blank">
               <div class="works-img">
                 <img
                   src="~/assets/images/works/img-calculator.png"
