@@ -7,7 +7,7 @@
           class="context md:pt-20 md:ml-20 md:pl-18 px-5 pb-5 pt-2 w-[80%] md:w-full mx-auto mb-16 md:mb-0 order-1"
         >
           <div class="mb-12">
-            <p class="font-normal text-lg">4 years of frontend developer</p>
+            <p class="font-normal text-lg">5 years of frontend developer</p>
           </div>
 
           <div class="">
