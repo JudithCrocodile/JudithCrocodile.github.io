@@ -7,12 +7,12 @@
           class="context md:pt-20 md:ml-20 md:pl-18 px-5 pb-5 pt-2 w-[80%] md:w-full mx-auto mb-16 md:mb-0 order-1"
         >
           <div class="mb-12">
-            <p class="font-normal text-lg">5 years of frontend developer</p>
+            <p class="font-normal text-lg">5+ years of frontend developer</p>
           </div>
 
           <div class="">
             <h3 class="text-xl tracking-widest mb-8">Skills</h3>
-            <ul
+            <!-- <ul
               class="grid md:grid-cols-3 grid-rows-fr gap-6 grid-cols-auto sm:grid-cols-2"
             >
               <li class="font-normal">HTML5</li>
@@ -30,7 +30,36 @@
               <li class="font-normal">Git collaboration</li>
               <li class="font-normal">Responsive web design</li>
               <li class="font-normal">Web accessibility</li>
-            </ul>
+            </ul> -->
+
+            <div class="mb-8">
+              <h4 class="text-l tracking-widest mb-4">Frontend</h4>
+              <ul
+                class="grid md:grid-cols-3 grid-rows-fr gap-6 grid-cols-auto sm:grid-cols-2"
+              >
+                <li class="font-normal">React / Next.js</li>
+                <li class="font-normal">Vue / Nuxt</li>
+                <li class="font-normal">Tailwind / SCSS</li>
+              </ul>              
+            </div>
+            <div class="mb-8">
+              <h4 class="text-l tracking-widest mb-4">Backend</h4>
+              <ul
+                class="grid md:grid-cols-3 grid-rows-fr gap-6 grid-cols-auto sm:grid-cols-2"
+              >
+                <li class="font-normal">Node.js / Express</li>
+                <li class="font-normal">MongoDB / Mongoose</li>
+              </ul>              
+            </div>
+            <div class="mb-8">
+              <h4 class="text-l tracking-widest mb-4">Tools & Others</h4>
+              <ul
+                class="grid md:grid-cols-3 grid-rows-fr gap-6 grid-cols-auto sm:grid-cols-2"
+              >
+                <li class="font-normal">Git / CI/CD</li>
+                <li class="font-normal">WebSocket</li>
+              </ul>              
+            </div>
           </div>
         </div>
         <div class="footer">
