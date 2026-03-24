@@ -1,39 +1,30 @@
 <script lang="ts" setup>
-import { onMounted, ref, watch } from 'vue'
-const { $refreshAos } = useNuxtApp()
+import { nextTick, onMounted, ref, watch } from 'vue'
 const { $aos } = useNuxtApp()
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
 const isScrolling = ref(false)
+const SCROLL_DURATION = 350
 
 onMounted(() => {
-  // $refreshAos()
-  // console.log('onMounted')
-  // console.log(useNuxtApp().$aos())
-
-  setTimeout(() => {
-    console.log('setTimeout')
-
-    $aos.init()
-  }, 5000)
-
-  // window.onresize = function () {
-  //   useNuxtApp().$aos().refresh()
-  // }
+  nextTick(() => {
+    console.log('mounted')
+    console.log($aos)
+    $aos.refreshHard()
+  })
 
   if (route.hash) {
-    const element = document.querySelector<HTMLElement>(route.hash)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      })
-    }
+    scrollToHash(route.hash)
   }
 })
 
 const scrollToHash = (hash: string): void => {
-  doScrolling(getElementY(hash))
+  if (!hash) {
+    return
+  }
+
+  doScrolling(getElementY(hash), SCROLL_DURATION)
 }
 
 watch(
@@ -82,15 +73,11 @@ function doScrolling(elementY: number, duration = 1000) {
     var time = timestamp - start
     // Get percent of completion in range [0, 1].
     var percent = Math.min(time / duration, 1)
-
-    console.log('percent', percent)
+    var easedPercent = 1 - Math.pow(1 - percent, 3)
 
     if (pageWrapper) {
-      pageWrapper.scrollTo(0, startingY + diff * percent)
+      pageWrapper.scrollTo(0, startingY + diff * easedPercent)
     }
-
-    console.log('scrollTo', startingY + diff * percent)
-    console.log('-------------------------------------------')
 
     // Proceed with animation as long as we wanted it to.
     if (time < duration) {
@@ -113,10 +100,11 @@ defineExpose({
         <div class="img-wrapper">
           <img
             data-aos="fade-right"
+            data-aos-offset="100"
             data-aos-duration="1000"
             data-aos-once="true"
             data-aos-mirror="true"
-            src="https://images.unsplash.com/photo-1652368719583-2bd29a79c474?q=80&w=3688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="~/assets/images/img_main-page.avif"
             alt="flower img"
           />
         </div>

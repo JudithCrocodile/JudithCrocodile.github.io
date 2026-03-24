@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
 
   plugins: [{ src: '~/plugins/aos', mode: 'client' }],
-  css: ['~/assets/css/global.scss'],
+  css: ['aos/dist/aos.css', '~/assets/css/global.scss'],
 
   eslint: {
     config: {
